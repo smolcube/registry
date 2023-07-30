@@ -5,16 +5,20 @@
   "main": "servers.js",
   "scripts": {
     "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "dev": "nodemon backend/server.js",
+    "compile": "sass --watch ./frontend/src/sass/main.scss ./frontend/public/dist/style.css"
+    
   },
   "author": "Rokaia Mostafa",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "colors": "^1.4.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.1",
     "sass": "^1.63.6"
   },
